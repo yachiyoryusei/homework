@@ -1,0 +1,125 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    color: #222e3e;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+.container {
+    padding: 20px 0;
+}
+
+/* //////////////////header/////////// */
+header{
+    margin-top: 20px;
+}
+.tab {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+}
+.tab.active {
+    background-color: rgb(25, 108, 218);
+    color: #222e3e;
+    border:none;
+}
+
+/* ////////////mian/////////// */
+.main input {
+    margin:15px auto;
+    border-radius: 5px;
+    background-color: rgb(237, 243, 202);
+}
+.main {
+    display: none;
+}
+.main.show {
+    display: block;
+}
+.input {
+    margin-top: 50px;
+}
+
+/* //////////////footer///////////// */
+.footer-tab {
+    background-color: rgb(236, 215, 119);
+    font-size: 20px;
+    height: 50px;
+}
+.footer-tab.active {
+    background-color: rgb(231, 160, 7);
+}
+
+
+/* ////////////report.html/////////// */
+
+/* /////////////////header///////////////// */
+
+
+
+
+
+
+/* ////////////////main////////// */
+.calculation input{
+    width: 300px;
+}
+
+
+chart-box{
+	margin: 0 auto;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+/* ここから円グラフ */
+.simple-pie-chart{
+	padding: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	background:linear-gradient(90deg,#e5e5e5 0%,#e5e5e5 50%,#ccff66 50%,#ccff66 100%);
+}
+.simple-pie-chart .chart-meter{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(0deg);
+	padding-left: 50%;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,transparent 0%,transparent 50%,#e5e5e5 50%,#e5e5e5 100%);
+}
+.simple-pie-chart .chart-meter.inversion{
+	background: linear-gradient(90deg,#ccff66 0%,#ccff66 50%,transparent 50%,transparent 100%);
+}
+.simple-pie-chart .chart-value{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
