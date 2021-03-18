@@ -14,17 +14,19 @@ body {
   margin: 0 auto;
 }
 /* //////////////////header/////////// */
-
+header {
+  height: 80px;
+}
 .tab {
   width: 200px;
   height: 40px;
   text-align: center;
   color: black;
-  background-color: #ccc;
-  border: 2px solid #ccc;
+  background-color: rgb(248, 244, 244);
+  border: 2px solid rgb(248, 244, 244);
 }
 .tab.active {
-  background-color: rgb(25, 108, 218);
+  background-color: rgb(85, 198, 243);
   color: #222e3e;
   border: none;
 }
